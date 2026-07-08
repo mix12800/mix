@@ -1,0 +1,46 @@
+.none {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.long {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #000000f0;
+    z-index: 9;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: op 0.2s;
+    transition: 0.2s;
+}
+
+@keyframes op {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ico {
+    animation: mix 1.5s infinite;
+}
+
+@keyframes mix {
+    0% {
+        transform: rotate(0 deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
