@@ -179,7 +179,7 @@ export default {
                 this.CreateProduct();
             }
         },
-
+//  ываыва
         GetProducts() {
             this.server('/product', 'GET')
                 .then((result) => {
